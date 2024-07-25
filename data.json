@@ -1,0 +1,97 @@
+{
+    "intents": [
+        {
+            "class": "greetings",
+            "inputs": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "How are you",
+                "Are you there?",
+                "Good day"
+            ],
+            "outputs": [
+                "Hello, Thankyou for visiting",
+                "Hey :-)",
+                "Hello there, what can I do for you?",
+                "Hi there"
+            ]
+        },
+        {
+            "class": "goodbye",
+            "inputs": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "outputs": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "class": "thanks",
+            "inputs": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "outputs": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "class": "items",
+            "inputs": [
+                "Which items do you have?",
+                "What kinds of items are there?",
+                "What do you sell?"
+            ],
+            "outputs": [
+                "We sell coffee and tea",
+                "We have coffee and tea"
+            ]
+        },
+        {
+            "class": "payments",
+            "inputs": [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Can I pay with Paypal?",
+                "Are you cash only?"
+            ],
+            "outputs": [
+                "We accept VISA, Mastercard and Paypal",
+                "We accept most major credit cards, and Paypal"
+            ]
+        },
+        {
+            "class": "delivery",
+            "inputs": [
+                "How long does delivery take?",
+                "How long does shipping take?",
+                "When do I get my delivery?"
+            ],
+            "outputs": [
+                "Delivery takes 2-4 days",
+                "Shipping takes 2-4 days"
+            ]
+        },
+        {
+            "class": "funny",
+            "inputs": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?"
+            ],
+            "outputs": [
+                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison."
+            ]
+        }
+    ]
+}
