@@ -27,12 +27,8 @@ model.eval()
 bot_name = "hubinit"
 print("Lets chat! type 'quit' to exit")
 
-while True:
-    sentence = input('You: ')
-    if sentence == "quit":
-        break
-
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
@@ -49,7 +45,17 @@ while True:
 
         for intent in intents["intents"]:
             if label == intent["class"]:
-                print(f"{bot_name}: {random.choice(intent['outputs'])}")
+                return random.choice(intent['outputs'])
 
     else:
-        print(f"{bot_name}: I do not understand, Can you ask again?")
+        return "I do not understand, Can you ask again?"
+    
+if __name__ == "__main__":
+    print("Lets chat! Type 'quit' to exit")
+    while True:
+        sentence = input("You: ")
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)

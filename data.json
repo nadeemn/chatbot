@@ -18,6 +18,37 @@
             ]
         },
         {
+            "class": "order_status",
+            "inputs": [
+                "What's the status of my order?",
+                "Where is my package?",
+                "Has my order shipped?",
+                "Track my order",
+                "Order delivery status"
+            ],
+            "outputs": [
+                "Let me check your order status. Can you please provide your order ID?",
+                "Your order is currently being processed.",
+                "Your package has been shipped and is on its way.",
+                "You can use your tracking number to track your package."
+            ]
+        },
+        {
+            "class": "return_policy",
+            "inputs": [
+                "What is your return policy?",
+                "How can I return a product?",
+                "Can I return a product after 30 days?",
+                "Do you offer free returns?"
+            ],
+            "outputs": [
+                "Our return policy allows you to return products within 30 days of receipt.",
+                "To return a product, please visit our returns page and follow the instructions.",
+                "Products can be returned within 30 days if they are unused and in their original packaging.",
+                "Yes, we offer free returns on certain items. Please check the product page for details."
+            ]
+        },
+        {
             "class": "goodbye",
             "inputs": [
                 "Bye",
@@ -36,7 +67,8 @@
                 "Thanks",
                 "Thank you",
                 "That's helpful",
-                "Thank's a lot!"
+                "Thank's a lot!",
+                "thankyou"
             ],
             "outputs": [
                 "Happy to help!",
@@ -52,8 +84,8 @@
                 "What do you sell?"
             ],
             "outputs": [
-                "We sell coffee and tea",
-                "We have coffee and tea"
+                "We sell mobile accessories",
+                "We have electronic gadgets"
             ]
         },
         {
@@ -62,35 +94,46 @@
                 "Do you take credit cards?",
                 "Do you accept Mastercard?",
                 "Can I pay with Paypal?",
-                "Are you cash only?"
+                "Are you cash only?",
+                "What payment methods do you accept?",
+                "payments",
+                "Is cash on delivery available?"
             ],
             "outputs": [
                 "We accept VISA, Mastercard and Paypal",
-                "We accept most major credit cards, and Paypal"
+                "We accept most major credit cards, and Paypal",
+                "Cash on delivery is available for selected locations.",
+                "Yes, you can pay with PayPal."
             ]
         },
         {
             "class": "delivery",
             "inputs": [
-                "How long does delivery take?",
                 "How long does shipping take?",
-                "When do I get my delivery?"
+                "Do you ship internationally?",
+                "What are your shipping rates?",
+                "Can I expedite my shipping?"
             ],
             "outputs": [
-                "Delivery takes 2-4 days",
-                "Shipping takes 2-4 days"
+                "Standard shipping takes 5-7 business days.",
+                "Yes, we ship internationally to most countries.",
+                "Shipping rates vary based on your location and order size. Please check our shipping page for detailed rates.",
+                "Expedited shipping options are available at checkout."
             ]
         },
         {
-            "class": "funny",
+            "class": "promotions",
             "inputs": [
-                "Tell me a joke!",
-                "Tell me something funny!",
-                "Do you know a joke?"
+                "Do you have any discounts right now?",
+                "How can I apply a promo code?",
+                "Are there any current promotions?",
+                "How do I use a coupon code?"
             ],
             "outputs": [
-                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-                "What did the buffalo say when his son left for college? Bison."
+                "You can check our promotions page for the latest discounts.",
+                "To apply a promo code, enter it at checkout in the 'Promo Code' box.",
+                "We are currently offering a discount on selected items.",
+                "Enter the coupon code during checkout to receive your discount."
             ]
         }
     ]
