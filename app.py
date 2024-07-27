@@ -6,11 +6,17 @@ app = Flask(__name__)
 
 @app.get("/")
 def index():
+    """
+    home page api returning the html template.
+    """
     return render_template("base.html")
 
 
 @app.post("/predict")
 def predict():
+    """
+    predict method to accept the API request from frontend and respond back appropriate answer for the user query.
+    """
     text = request.get_json().get("message")
 
     response = get_response(text)

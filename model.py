@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 
 class NeuralNet(nn.Module):
+    """
+    A simple nerual network with 2 hidden layers and RELU activation function.
+    """
     def __init__(self, input_size, hidden_size, output_size):
 
         super(NeuralNet, self).__init__()
@@ -11,7 +14,9 @@ class NeuralNet(nn.Module):
         self.relu = nn.ReLU()
 
     def forward(self, x):
-        
+        """
+        This method carries out the forward pass of the network.
+        """
         out = self.l1(x)
         out = self.relu(out)
         out = self.l2(out)
